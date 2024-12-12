@@ -62,5 +62,15 @@
             <button type="submit">Upload</button>
         </form>
     </section>
+    <script>
+        // Verify font loading in browser console
+        if (document.fonts) {
+            document.fonts.load('1em Migra').then(() => {
+                console.log('Migra font loaded successfully.');
+            }).catch(() => {
+                console.error('Migra font failed to load.');
+            });
+        }
+    </script>
 </body>
 </html>
